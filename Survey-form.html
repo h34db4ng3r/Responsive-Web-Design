@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+    <head>
+        <title>Survey Form</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+
+    <body>
+        <header class="header">
+            <h1 id="title">Photography Contest</h1>
+            <p id="description">Thank you for participating in the contest</p>
+        </header>
+
+        <form id="survey-form">
+            <fieldset>
+                <legend>Your details: </legend>
+                <label id="name-label" for="name">Name: <input id="name" type="text" required placeholder="Enter your fullname"/></label>
+                <label id="email-label" for="email">Email: <input id="email" type="email" required placeholder="Enter your email"/></label>
+                <label id="number-label" for="number">Age: <input id="number" type="number" min="6" max="250" placeholder="Age"/> </label>
+            </fieldset>
+            <br />
+
+            <fieldset>
+                <legend>When was photography invented?</legend>
+                <label><input type="radio" value="first" name="one"/> 1800s</label>
+                <label><input type="radio" value="second" name="one"/> 1900s</label>
+                <label><input type="radio" value="third" name="one"/> 2000s</label>            
+            </fieldset>
+            <br />
+
+            <fieldset>
+                <legend>Which camera brand do you prefer?</legend>
+                <select id="dropdown">
+                    <option>(select one)</option>
+                    <option>Canon</option>
+                    <option>Nikon</option>
+                    <option>Sony</option>
+                    <option>Fujifilm</option>
+                    <option>Other</option>
+                </select>
+            </fieldset>
+            <br />
+
+            <fieldset>
+                <legend>Participate</legend>
+                <label><input type="checkbox" value="checked"/> Subscribe to newsletter</label>
+                <label><input type="checkbox" value="checked"/> I agree to the <a href="" required>terms and conditions</a></label>
+                <br />
+            
+                <label><textarea placeholder="Additional Information"></textarea></label>
+                <label><input type="submit" name="submit" id="submit"/></label>
+            </fieldset>
+
+        </form>
+    </body>
+</html>
